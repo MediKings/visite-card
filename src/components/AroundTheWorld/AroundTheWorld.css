@@ -1,0 +1,155 @@
+.AroundTheWorld-wrapper {
+    padding-top: 800px;
+    padding-bottom: 100px;
+    position: relative;
+    background-image: linear-gradient(to top, rgb(0, 0, 119) 60%, transparent);
+}
+
+.AroundTheWorld-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.AroundTheWorld-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 75%;
+}
+
+.AroundTheWorld-blocks {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+.AroundTheWorld-wrapper {
+    position: relative;
+}
+
+.AroundTheWorld-wrapper .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* margin-top: 10rem; */
+}
+
+.AroundTheWorld-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 75%;
+}
+
+.AroundTheWorld-blocks {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.AroundTheWorld-block {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 2rem;
+}
+
+.block-features {
+    display: flex;
+    gap: 1rem;
+    border-bottom: none;
+}
+
+.block-feature {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    border: 1px solid hsla(0, 0%, 59%, 0.17);
+    border-radius: 1rem;
+    padding: 1rem;
+
+    color: var(--title-color);
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+}
+
+/* .AroundTheWorld-block:nth-child(1) > .block-features > :nth-child(2) {
+    margin-top: 3rem;
+}
+
+.AroundTheWorld-block:nth-of-type(2) > .block-features > :nth-child(1),
+.AroundTheWorld-block:nth-of-type(2) > .block-features > :nth-child(3) {
+    margin-top: 2rem;
+} */
+
+.AroundTheWorld-support {
+    display: flex;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    background-color: #fff;
+}
+
+.AroundTheWorld-support > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.AroundTheWorld-support > :nth-child(1) {
+    flex: 1;
+}
+
+.AroundTheWorld-support > :nth-child(2) {
+    flex: 1.6;
+}
+
+@media (max-width: 990px) {
+    .AroundTheWorld-blocks {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .AroundTheWorld-support {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .AroundTheWorld-block {
+        width: 80%;
+        margin: auto;
+    }
+
+    .AroundTheWorld-features {
+        flex-direction: column;
+    }
+
+    .AroundTheWorld-feature {
+        margin-top: 0rem !important;
+    }
+}
