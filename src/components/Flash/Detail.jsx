@@ -19,6 +19,8 @@ const Detail = () => {
         return "Desktop";
     };
 
+    console.log(detectPlatform());
+
     const launchContactApp = () => {
         const platform = detectPlatform();
         
@@ -72,7 +74,7 @@ const Detail = () => {
                     <div className='flex items-center gap-3 mb-2'><Phone width={18} />{item?.phone}</div>
                     <div className='flex items-center gap-3 mb-2'><Map width={18} />{item?.address}</div>
                 </div>
-                <span onClick={launchContactApp} style={{display: 'inline-block',backgroundColor: '#000', color: '#fff', padding: '15px 25px', margin: '10px', borderRadius: '30px', cursor: 'pointer'}}>Enregistrer le contact</span>
+                <button onClick={launchContactApp} style={{display: 'inline-block',backgroundColor: '#000', color: '#fff', padding: '15px 25px', margin: '10px', borderRadius: '30px', cursor: 'pointer'}}>Enregistrer le contact</button>
                 <div className="social ml-4">
                     <div className='flex items-center gap-3 mb-2'>
                         <Smartphone width={20} />
@@ -89,6 +91,9 @@ const Detail = () => {
                     <div className='flex items-center gap-3 mb-2'>
                         <Smartphone width={20} />
                         <Link to={item?.linkedin}>LinkedIn</Link>
+                    </div>
+                    <div className='flex items-center gap-3 mb-2'>
+                        <small className='text-gray-300'>{detectPlatform()}</small>
                     </div>
                 </div>
             </div>
