@@ -1,12 +1,17 @@
 import './App.css'
-import {motion, useAnimation} from 'framer-motion';
+import { Routes, Route, Navigate, BrowserRouter } from 'react-router-dom';
 import Flash from './components/Flash/Flash';
+import Detail from './components/Flash/Detail';
 
 function App() {
-  const controls = useAnimation();
-
   return (
-    <Flash />
+    <BrowserRouter>
+      <Routes>
+        <Route path='*' element={<Navigate to='/' />} />
+        <Route path='/' index element={<Flash />} />
+        <Route path='/:id' index element={<Detail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

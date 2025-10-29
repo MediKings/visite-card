@@ -2,7 +2,7 @@ export const data = [
   {
     id: "1",
     cover: "/banner.jpg",
-    profile: "/profile.jpg",
+    profile: "/hero/person1.jpg",
     name: "Medi Kingura",
     address: "Kinshasa, RDC",
     email: "medikingura86@gmail.com",
@@ -15,7 +15,7 @@ export const data = [
   {
     id: "2",
     cover: "/banner.jpg",
-    profile: "/profile.jpg",
+    profile: "/hero/person2.jpg",
     name: "Plamedie Kingura",
     address: "Kinshasa, RDC",
     email: "israellakingura@gmail.com",
@@ -28,7 +28,7 @@ export const data = [
   {
     id: "3",
     cover: "/banner.jpg",
-    profile: "/profile.jpg",
+    profile: "/hero/person3.jpg",
     name: "Joseph Mulumba",
     address: "Kinshasa, RDC",
     email: "lepropulseur@gmail.com",
