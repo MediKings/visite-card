@@ -1,11 +1,19 @@
 import { data } from '../../utils/data'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Mail, Map, Phone, User } from 'lucide-react'
 
 const Flash = () => {
+  const navigate = useNavigate();
   return (
     <div className="container p-5">
-        <h2 className='font-medium mb-3' style={{fontSize: '2rem'}}>Liste de contacts</h2>
+        <h2 className='font-medium mb-3' style={{fontSize: '2rem'}}>Liste des cartes</h2>
+        <button 
+            className='p-10 bg-gray-300 text-gray-700 rounded-lg cursor-pointer' 
+            onClick={()=>navigate('/form')} 
+        >
+            <b>+ Ajouter</b>
+        </button>
+
         {
             data?.map((item) => (
                 <Link to={`/${item?.id}`} key={item?.id} className=''>
